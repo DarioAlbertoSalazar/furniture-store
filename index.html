@@ -21,15 +21,16 @@
           integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
           crossorigin="anonymous"
           referrerpolicy="no-referrer" />
+    <script src="./script.js"></script>
     <title>Furniture store</title>
 </head>
 
 <body>
+    <div>
+        <h1>Tienda de <span>Muebles</span></h1>
+    </div>
     <section class="top-nav">
-        <div>
-            <h1>Tienda de <span>Muebles</span></h1>
-        </div>
-        <i class="fa-solid fa-cart-shopping"></i>
+
         <input id="menu-toggle"
                type="checkbox" />
         <label class='menu-button-container'
@@ -44,6 +45,7 @@
             <li>Galeria</li>
             <li>Contacto</li>
         </ul>
+        <i class="fa-solid fa-cart-shopping" id="clicks"></i>
     </section>
     <div class="hero-image">
         <img src="/img/principal.jpg"
@@ -53,29 +55,28 @@
         <section>
             <h2>Nuestros Productos</h2>
             <!-- producto 1 -->
-            <div class="product">
-                <div>
-                    <img src="/img/producto1.jpg"
-                         alt="bedroom">
+            <div class="product product-long">
+                <div class="product-image"
+                     style="background-image: url('/img/producto1.jpg');">
                 </div>
-                <div class="description">
+                <div class="product product-description">
                     <h3>Producto 1</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quia enim cum illo
                         adipisci laudantium alias expedita aut voluptatem, perferendis aspernatur ipsa maxime,
                         molestias
                         corrupti in nam est possimus porro.</p>
                     <p>$10,000</p>
-                    <button>Agregar al carrito</button>
+                    <button onclick="addItem()">Agregar al carrito</button>
                 </div>
             </div>
-            <!-- producto 2 y3 -->
-            <div class="product">
-                <div class="card">
+            <!-- producto 2 y 3 -->
+            <div class="cards-container">
+                <div class="product product-card">
                     <div>
                         <img src="/img/producto2.jpg"
                              alt="living room armchairs">
                     </div>
-                    <div class="description">
+                    <div class="product product-description">
                         <h3>Producto 2</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quia enim cum illo
                             adipisci
@@ -84,16 +85,15 @@
                             in
                             nam est possimus porro.</p>
                         <p>$10,000</p>
-                        <button>Agregar al carrito</button>
+                        <button onclick="addItem()">Agregar al carrito</button>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="close">X</div>
+                <div class="product product-card">
                     <div>
                         <img src="/img/producto3.jpg"
                              alt="bed">
                     </div>
-                    <div class="description">
+                    <div class="product product-description">
                         <h3>Producto 3</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quia enim cum illo
                             adipisci
@@ -102,18 +102,18 @@
                             in
                             nam est possimus porro.</p>
                         <p>$10,000</p>
-                        <button>Agregar al carrito</button>
+                        <button onclick="addItem()">Agregar al carrito</button>
                     </div>
                 </div>
             </div>
             <!-- producto 4, 5, 6 -->
-            <div class="product">
-                <div class="card">
+            <div class="cards-container">
+                <div class="product product-card">
                     <div>
                         <img src="/img/producto4.jpg"
                              alt="sofa">
                     </div>
-                    <div class="description">
+                    <div class="product product-description">
                         <h3>Producto 4</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quia enim cum illo
                             adipisci
@@ -122,15 +122,15 @@
                             in
                             nam est possimus porro.</p>
                         <p>$10,000</p>
-                        <button>Agregar al carrito</button>
+                        <button onclick="addItem()">Agregar al carrito</button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="product product-card">
                     <div>
                         <img src="/img/producto5.jpg"
                              alt="chair">
                     </div>
-                    <div class="description">
+                    <div class="product product-description">
                         <h3>Producto 5</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quia enim cum illo
                             adipisci
@@ -139,15 +139,15 @@
                             in
                             nam est possimus porro.</p>
                         <p>$10,000</p>
-                        <button>Agregar al carrito</button>
+                        <button onclick="addItem()">Agregar al carrito</button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="product product-card">
                     <div>
                         <img src="/img/producto6.jpg"
                              alt="sofa">
                     </div>
-                    <div class="description">
+                    <div class="product product-description">
                         <h3>Producto 6</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quia enim cum illo
                             adipisci
@@ -156,7 +156,7 @@
                             in
                             nam est possimus porro.</p>
                         <p>$10,000</p>
-                        <button>Agregar al carrito</button>
+                        <button >Agregar al carrito</button>
                     </div>
                 </div>
             </div>
