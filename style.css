@@ -110,7 +110,7 @@ span {
 
 main {
     margin: auto;
-    max-width: 70%;
+    max-width: 1000px;
 }
 
 button {
@@ -121,6 +121,11 @@ button {
     border-radius: 12px;
     width: 200px;
     height: 40px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
 }
 
 img {
@@ -148,7 +153,6 @@ img {
 
 .product-card {
     position: relative;
-    margin: 10px 2px;
     display: block;
 }
 
@@ -156,9 +160,12 @@ img {
     background-color: #037BC0;
     text-align: center;
     display: block;
+    padding: 12px 24px;
 }
 
 .cards-container {
+    gap: 8px;
+    margin-top: 16px;
     display: flex;
 }
 
@@ -167,7 +174,6 @@ img {
 }
 
 .product-long .product-description {
-    border-radius: 5px;
     max-width: 500px;
 }
 
@@ -250,11 +256,12 @@ footer li {
     }
 
     .product-long {
-        flex-direction: row;
+        flex-direction: column;
+        min-height: 550px;
     }
 
     .product-long .product-description {
-        max-width: 300px;
+        max-width: 100%;
     }
 
     .cards-container {
