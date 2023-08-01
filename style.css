@@ -15,11 +15,6 @@ body {
     height: 100%;
 }
 
-/* quitar despues */
-/* * {
-    border: 1px solid red;
-} */
-
 h1,
 h2 {
     text-align: center;
@@ -56,6 +51,7 @@ span {
 .menu>li {
     margin: 0 1rem;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .menu-button-container {
@@ -117,8 +113,8 @@ button {
     color: white;
     margin: 10px;
     background-color: #8cbc01;
-    border: none;
-    border-radius: 12px;
+    border: none !important;
+    border-radius: 12px !important;
     width: 200px;
     height: 40px;
     cursor: pointer;
