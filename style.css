@@ -54,6 +54,10 @@ span {
     cursor: pointer;
 }
 
+a{
+    color: white;
+}
+
 .menu-button-container {
     display: none;
     height: 100%;
@@ -109,18 +113,18 @@ main {
     max-width: 1000px;
 }
 
-button {
+.btn-primary {
     color: white;
     margin: 10px;
     background-color: #8cbc01;
-    border: none !important;
-    border-radius: 12px !important;
+    border: none;
+    border-radius: 12px;
     width: 200px;
     height: 40px;
     cursor: pointer;
 }
 
-button:hover {
+.btn-primary:hover {
     background-color: black;
 }
 
@@ -130,7 +134,7 @@ img {
     margin-bottom: -4px;
 }
 
-.hero-image {
+.carousel-inner {
     height: 500px;
 }
 
@@ -214,13 +218,16 @@ footer li {
     .menu {
         position: absolute;
         top: 0;
-        margin-top: 136px;
+        margin-top: 93px;
         left: 0;
         flex-direction: column;
         width: 100%;
         justify-content: center;
         align-items: center;
+        z-index: 1;
     }
+
+
 
     #menu-toggle~.menu li {
         height: 0;
